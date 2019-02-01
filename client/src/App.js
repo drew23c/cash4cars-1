@@ -8,12 +8,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1><strong className="cash">CA$H</strong> FOR JUNK CARS, VAN & TRUCKS</h1>
         <div className="towtruck-image">
-          <img src={towtruck} style={{width:'60%', height:'60%'}} />
+          <img src={towtruck} />
+        </div>
+        <div className="heading">
+          <h1>"Business Name"</h1>
+          <h2><strong className="cash">CA$H</strong> FOR JUNK CARS, VAN & TRUCKS</h2>
         </div>
         <div className="contact">
-          <h2>Call Tony</h2>
+          <h2>Call Todd</h2>
           <h3>917-862-5466</h3>
         </div>
         <div className="features">
@@ -24,7 +27,13 @@ class App extends Component {
           </ul>
         </div>
           <div className="cash-image">
-            <img src={cash} style={{width:'30%', height:'30%'}} />
+            <img src={cash} style={{width:'20%', height:'20%'}} />
+          </div>
+          <div className="footer">
+            <ul className="footer-list">
+              <li>"Business Name"</li>
+              <li>Phone: 917-862-5466</li>
+            </ul>
           </div>
       </div>
     );

@@ -9,11 +9,18 @@
   background-color:rgb(241, 61, 55);
   height:100vh;
 }
-h1{
-  margin-bottom:2%;
+.heading{
+  position: absolute;
+  margin: 0 auto 0 auto;
+  margin-left:40%;
+  margin-top:20%;
 }
 .cash{
   color:green;
+}
+.features{
+  margin-top:25%;
+  margin-left:80%;
 }
 .features h2{
   text-align: left;
@@ -26,23 +33,30 @@ h1{
   position:relative;
   float:left;
   margin-left:15%;
+  width: 100%;
+  height:100%;
+  margin-left:0;
 }
 .towtruck-image img{
-  border-radius: 25%;
+  width:100%;
+  height:40%;
 }
 .contact{
-  position:relative;
-  float:left;
-  margin-top:15%;
-  animation: colorful ease-in-out .2s infinite;
+  position:absolute;
+  float:right;
+  margin-top:25%;
+  margin-left:10%;
+  animation: colorful ease-in-out 1s infinite;
   font-size:120%;
 }
 .cash-image{
-  position: relative;
+  position: absolute;
   animation: flashImage linear 1s infinite;
 }
 .cash-image img{
   border-radius:30%;
+  margin-top:35%;
+  margin-left:20%;
 }
 @keyframes flashImage {
   from {
@@ -57,7 +71,7 @@ h1{
     color:black;
   }
   50%{
-    color:red;
+    color:blue;
   }
   75%{
     color:green;
@@ -67,9 +81,8 @@ h1{
   }
 }
 .features{
-  position: absolute;
+  position:absolute;
   float:left;
-  margin-top:15%;
 }
 @keyframes App-logo-spin {
   from {
@@ -78,4 +91,14 @@ h1{
   to {
     transform: rotate(360deg);
   }
+}
+.footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+.footer-list li{
+  display:inline;
+  padding:0 1% 0 1%;
 }
