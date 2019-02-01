@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+*{
+  margin:0;
+  padding:0;
+}
 .App {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background-color:rgb(241, 61, 55);
+  height:100vh;
+}
+h1{
+  margin-bottom:2%;
+}
+.cash{
+  color:green;
+}
+.features h2{
+  text-align: left;
+  margin-left:15%;
 }
 .features ul li{
-  list-style-type: none;
   text-align: left;
 }
 .towtruck-image{
@@ -17,17 +34,42 @@
   position:relative;
   float:left;
   margin-top:15%;
+  animation: colorful ease-in-out .2s infinite;
+  font-size:120%;
 }
 .cash-image{
   position: relative;
+  animation: flashImage linear 1s infinite;
+}
+.cash-image img{
+  border-radius:30%;
+}
+@keyframes flashImage {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes colorful {
+  0%{
+    color:black;
+  }
+  50%{
+    color:red;
+  }
+  75%{
+    color:green;
+  }
+  100%{
+    color:yellow;
+  }
 }
 .features{
   position: absolute;
   float:left;
   margin-top:15%;
-}
-.contact-cash-image{
-  display:inline;
 }
 @keyframes App-logo-spin {
   from {
