@@ -6,57 +6,9 @@
 .App {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  background-color:rgb(241, 61, 55);
-  height:100vh;
-}
-.heading{
-  position: absolute;
-  margin: 0 auto 0 auto;
-  margin-left:40%;
-  margin-top:20%;
-}
-.cash{
-  color:green;
-}
-.features{
-  margin-top:25%;
-  margin-left:80%;
-}
-.features h2{
-  text-align: left;
-  margin-left:15%;
-}
-.features ul li{
-  text-align: left;
-}
-.towtruck-image{
-  position:relative;
-  float:left;
-  margin-left:15%;
-  width: 100%;
   height:100%;
-  margin-left:0;
-}
-.towtruck-image img{
-  width:100%;
-  height:40%;
-}
-.contact{
-  position:absolute;
-  float:right;
-  margin-top:25%;
-  margin-left:10%;
-  animation: colorful ease-in-out 1s infinite;
-  font-size:120%;
-}
-.cash-image{
-  position: absolute;
-  animation: flashImage linear 1s infinite;
-}
-.cash-image img{
-  border-radius:30%;
-  margin-top:35%;
-  margin-left:20%;
+  /* height:100vh; */
+  background-color:rgb(245, 240, 240);
 }
 @keyframes flashImage {
   from {
@@ -80,23 +32,100 @@
     color:yellow;
   }
 }
-.features{
-  position:absolute;
-  float:left;
-}
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+@keyframes flex{
+  0%{
+    font-size: 160%;
+  }
+  50%{
+    font-size: 220%;
+  }
+  100%{
+    font-size: 160%;
+  }
+}
+.towtruck-image{
+  position: relative;
+  width:100%;
+  height:40%;
+}
+.towtruck-image h1{
+  position: absolute;
+  z-index: 10;
+  font-size:500%;
+  margin-left:2%;
+  margin-top:2%;
+}
+.towtruck-image img{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+.heading{
+  position: relative;
+  font-size:160%;
+}
+.heading-call{
+  position: absolute;
+  color:white;
+  z-index: 10;
+  margin-left:45%;
+  margin-top:.5%;
+}
+.cash{
+  color:green;
+}
+.contact{
+  font-size:160%;
+  animation: colorful .2s infinite;
+}
+.features{
+  /* position:absolute; */
+  font-size:160%;
+  /* animation: flex 3s infinite; */
+  padding:2% 0 2% 0;
+}
+.cash-image{
+  width:70%;
+  border-radius:25%;
+}
+.information p{
+  font-size:140%;
+}
+.information h3{
+  margin-bottom:2%;
+  font-size:160%;
+}
+.call{
+  animation: colorful .2s infinite;
+}
+.information ul li{
+  margin:5% 0 5% 0;
+  font-size:160%;
+}
+.We-buy{
+  width:30%;
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:2%;
+  margin-bottom:2%;
 }
 .footer{
-  position: absolute;
+  position: relative;
   bottom:0;
   width:100%;
   height:60px;
+  font-size:160%;
+  background-color:black;
+  color:white;
 }
 .footer-list li{
   display:inline;
