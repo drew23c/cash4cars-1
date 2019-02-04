@@ -7,7 +7,6 @@
   text-align: center;
   font-family: 'Oswald', sans-serif;
   height:100%;
-  /* height:100vh; */
   background-color:rgb(245, 240, 240);
 }
 @keyframes flashImage {
@@ -32,14 +31,6 @@
     color:yellow;
   }
 }
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 @keyframes flex{
   0%{
     font-size: 160%;
@@ -50,84 +41,4 @@
   100%{
     font-size: 160%;
   }
-}
-.towtruck-image{
-  position: relative;
-  width:100%;
-  height:40%;
-}
-.towtruck-image h1{
-  position: absolute;
-  z-index: 10;
-  font-size:500%;
-  margin-left:2%;
-  margin-top:2%;
-}
-.towtruck-image img{
-  position: relative;
-  width:100%;
-  height:100%;
-}
-.heading{
-  position: relative;
-  font-size:160%;
-}
-.heading-call{
-  position: absolute;
-  color:white;
-  z-index: 10;
-  margin-left:45%;
-  margin-top:.5%;
-}
-.cash{
-  color:green;
-}
-.contact{
-  font-size:160%;
-  animation: colorful .2s infinite;
-}
-.features{
-  /* position:absolute; */
-  font-size:160%;
-  /* animation: flex 3s infinite; */
-  padding:2% 0 2% 0;
-}
-.cash-image{
-  width:70%;
-  border-radius:25%;
-}
-.information p{
-  font-size:140%;
-}
-.information h3{
-  margin-bottom:2%;
-  font-size:160%;
-}
-.call{
-  animation: colorful .2s infinite;
-}
-.information ul li{
-  margin:5% 0 5% 0;
-  font-size:160%;
-}
-.We-buy{
-  width:30%;
-  text-align: left;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:2%;
-  margin-bottom:2%;
-}
-.footer{
-  position: relative;
-  bottom:0;
-  width:100%;
-  height:60px;
-  font-size:160%;
-  background-color:black;
-  color:white;
-}
-.footer-list li{
-  display:inline;
-  padding:0 1% 0 1%;
 }
