@@ -47,8 +47,8 @@ export default class App extends Component {
             <Text style={{fontSize:20}}>Lost keys, <Text style={{fontWeight:'bold', fontSize:20}}>NO PROBLEM.</Text></Text>
           </View>
             </View>
-            <View className="footer">
-                <Text style={{textAlign:'center', paddingTop:10}}>TA Trucking</Text>
+            <View style={styles.footer}>
+                <Text style={{textAlign:'center', paddingTop:10, color:'white'}}>TA Trucking</Text>
                 {/* <Text>Click to call <TouchableWithoutFeedback onPress={()=> Communications.phonecall("9178625466",true)}><Image source={phone} style={{height:50, width:50}} /></TouchableWithoutFeedback></Text> */}
             </View>
             {/* <FlatList
@@ -101,5 +101,9 @@ const styles = StyleSheet.create({
   contact:{
     position:'relative',
     zIndex:10,
+  },
+  footer:{
+    width:'100%',
+    backgroundColor:'black',
   }
 });
