@@ -51,13 +51,6 @@ export default class App extends Component {
                 <Text style={{textAlign:'center', paddingTop:10, color:'white'}}>TA Trucking</Text>
                 {/* <Text>Click to call <TouchableWithoutFeedback onPress={()=> Communications.phonecall("9178625466",true)}><Image source={phone} style={{height:50, width:50}} /></TouchableWithoutFeedback></Text> */}
             </View>
-            {/* <FlatList
-              data={[
-                {key:"TA Trucking"},
-                {key:"Click to call", img: phone}
-              ]}
-              renderItem={({item})=> <View><Text>{item.key}</Text><TouchableWithoutFeedback onPress={()=> Communications.phonecall("9178625466")}><Image source={phone} style={{height:30, width:30}} /></TouchableWithoutFeedback></View>}
-            /> */}
         </ScrollView>
       </View>
     );
@@ -72,14 +65,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width:'100%',
     height:'100%',
-    top:0,
+    top:-4,
     backgroundColor:'rgb(245, 240, 240)'
   },
   title:{
     position:'absolute',
     zIndex:10,
     marginTop:0,
-    fontSize:25,
+    fontSize:24,
     left:5
   },
   phoneNumber:{
