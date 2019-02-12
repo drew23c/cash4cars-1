@@ -24,4 +24,5 @@
 }
 .heading-call a{
     color:red;
+    animation: colorful .2s infinite;
 }

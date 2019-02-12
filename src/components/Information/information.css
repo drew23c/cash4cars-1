@@ -10,7 +10,7 @@
     border-radius:25%;
 }
 .call{
-    animation: colorful .2s infinite;
+    color:red;
 }
 .information ul li{
     margin:5% 0 5% 0;
