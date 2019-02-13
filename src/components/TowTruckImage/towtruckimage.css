@@ -6,7 +6,7 @@
 .towtruck-image h1{
     position: absolute;
     z-index: 10;
-    font-size:500%;
+    font-size:8vw;
     margin-left:2%;
     margin-top:2%;
 }
@@ -20,7 +20,7 @@
     color:red;
     z-index: 10;
     margin-left:45%;
-    font-size:90%;
+    font-size:.7vw;
 }
 .heading-call a{
     color:red;

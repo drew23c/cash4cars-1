@@ -19,14 +19,14 @@ export default class Information extends Component{
                     <li><img className="cash-image" src={cash} style={{height:'15%', width:'15%'}} /></li>
                     <li><p>Get paid immediately you get payment on the spot!</p></li>
                 </ul>
-                <h3>Have any questions? <strong className="call">Call 24/7 (917) 862-5466</strong></h3>
+                <h3>Have any questions? <br/><strong className="call">Call 24/7 917-862-5466</strong></h3>
                 </div>
                 <div className="We-buy">
                 <p>{`We buy junk cars for cash in the entire New York area. 
                     Sell your used or unwanted cars, trucks, SUVs, or vans and 
                     get paid on the spot. We don't just buy junk vehicles! We buy 
                     ANY condition vehicle with or without a tile or keys.`}</p>
-                <p>Lost keys, no problem.</p>
+                <p>Lost keys, no problem!</p>
                 </div>
             </div>
         )

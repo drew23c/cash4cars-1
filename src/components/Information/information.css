@@ -24,4 +24,18 @@
     margin-top:2%;
     margin-bottom:2%;
 }
-   
+@media screen and (max-width:680px){
+    .We-buy{
+        width:80%;
+    }
+} 
+@media screen and (max-width:768px){
+    .We-buy{
+        width:80%;
+    }
+} 
+@media screen and (max-width:1024px){
+    .We-buy{
+        width:80%;
+    }
+}
