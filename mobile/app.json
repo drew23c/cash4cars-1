@@ -25,6 +25,9 @@
     "ios": {
       "supportsTablet": true
     },
+    "android": {
+      "package": "com.tatrucking4junk.tatrucking4junk"
+    },
     "description": "",
     "githubUrl": "https://github.com/drew23c/cash4cars/tree/master/client/mobile"
   }

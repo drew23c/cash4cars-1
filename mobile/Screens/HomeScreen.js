@@ -26,7 +26,7 @@ export default class App extends Component {
           </View>
           <View style={[styles.contact, {paddingBottom:10}]}>
             <Text style={{fontSize:20}}>Call Tony</Text>
-            <Text style={{fontSize:20}} onPress={()=> Communications.phonecall('9178625466', true)}>917-862-5466</Text>
+            <Text style={{fontSize:20, color:'red'}} onPress={()=> Communications.phonecall('9178625466', true)}>917-862-5466</Text>
           </View>
           <View style={{alignItems:'center', position:'relative'}}>
             <Text style={{textAlign:'center', fontSize:20, paddingBottom:10}}>We buy junk cars, vans, trucks, SUVs, forklifts in all 5 boroughs</Text>
@@ -38,7 +38,7 @@ export default class App extends Component {
                 <Image source={cash} style={{height:80, width:80, borderRadius:25}} />
               <Text style={{fontSize:20, textAlign:'center'}}>Get paid immediately you get payment on the spot!</Text>
             <Text style={{fontSize:20, textAlign:'center'}}>Have any questions?</Text>
-            <Text style={{fontSize:20}}>Call 24/7 (917) 862-5466</Text>
+            <Text style={{fontSize:20, color:'red'}}>Call 24/7 917-862-5466</Text>
             <Text style={{padding:5, fontSize:20}}>We buy junk cars for cash in the entire New York area. 
                 Sell your used or unwanted cars, trucks, SUVs, or vans and 
                 get paid on the spot. We don't just buy junk vehicles! We buy 
