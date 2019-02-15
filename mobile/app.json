@@ -8,11 +8,11 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/towtruckIcon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -26,7 +26,8 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.tatrucking4junk.tatrucking4junk"
+      "package": "com.tatrucking4junk.tatrucking4junk",
+      "versionCode": 3
     },
     "description": "",
     "githubUrl": "https://github.com/drew23c/cash4cars/tree/master/client/mobile"
