@@ -17,7 +17,7 @@ export default class Information extends Component{
                     <li><img className="cash-image" src={towtruckIcon} style={{height:'15%', width:'15%'}} /></li>
                     <li><p>Get a <b>FREE</b> tow. Absolutely <b>FREE</b> pickup included.</p></li>
                     <li><img className="cash-image" src={cash} style={{height:'15%', width:'15%'}} /></li>
-                    <li><p>Get paid immediately, you get payment on the spot!</p></li>
+                    <li><p>Get paid immediately, you get paid on the spot!</p></li>
                 </ul>
                 <h3>Have any questions? <br/><strong className="call">Call 24/7 917-862-5466</strong></h3>
                 </div>

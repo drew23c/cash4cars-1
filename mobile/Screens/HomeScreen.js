@@ -36,7 +36,7 @@ export default class App extends Component {
                 <Image source={towtruckIcon} style={{height:80, width:80, borderRadius:25}} />
                 <Text style={{fontSize:20, textAlign:'center'}}>Get a <Text style={{fontWeight:'bold', fontSize:20}}>FREE</Text> tow. Absolutely <Text style={{fontWeight:'bold'}}>FREE</Text> pickup included.</Text>
                 <Image source={cash} style={{height:80, width:80, borderRadius:25}} />
-              <Text style={{fontSize:20, textAlign:'center'}}>Get paid immediately, you get payment on the spot!</Text>
+              <Text style={{fontSize:20, textAlign:'center'}}>Get paid immediately, you get paid on the spot!</Text>
             <Text style={{fontSize:20, textAlign:'center'}}>Have any questions?</Text>
             <Text style={{fontSize:20, color:'red'}}>Call 24/7 917-862-5466</Text>
             <Text style={{padding:5, fontSize:20}}>We buy junk cars for cash in the entire New York area. 
