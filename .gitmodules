@@ -1,0 +1,3 @@
+[submodule "client/mobile/dist"]
+	path = client/mobile/dist
+	url = https://github.com/drew23c/cash4cars-1.git
