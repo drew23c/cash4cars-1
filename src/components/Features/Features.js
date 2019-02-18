@@ -7,7 +7,7 @@ export default class Features extends Component{
             <div className="features">
               <h2>Service Include:</h2>
               <ul>
-                <li><h2>Snow Removal</h2></li>
+                <li><h3>Snow Removal</h3></li>
               </ul>
             </div>
         )

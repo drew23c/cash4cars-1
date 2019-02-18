@@ -9,5 +9,21 @@
 }
 .footer-list li{
     display:inline;
-    padding:0 1% 0 1%;
+    padding:0 3% 0 3%;
+    /* font-size:2vw; */
 }
+/* @media screen and (max-width:375px){
+    .footer-list li{
+        font-size:4vw;
+    }
+}
+@media screen and (max-width:768px){
+    .footer-list li{
+        font-size:4vw;
+    }
+}
+@media screen and (max-width:320px){
+    .footer-list li{
+        font-size:4vw;
+    }
+} */

@@ -1,20 +1,46 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, ScrollView, Animated } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, ScrollView, Animated, Linking, Easing } from 'react-native';
 import Communications from 'react-native-communications';
 import towtruck from '../pics/towtruck.jpg';
 import towtruckIcon from '../pics/towtruckIcon.jpg';
 import cash from '../pics/cash.png';
 import phoneIcon from '../pics/phone.png';
+import WreckImage from '../poses/Image';
 
 export default class App extends Component {
   static navigationOptions = {
     title:'TA Trucking'
   }
+    state={
+      fadeAnim: new Animated.Value(10),
+    }
+    componentDidMount(){
+      this.Infinite()
+    }
+    Infinite(){
+        Animated.timing(
+        this.state.fadeAnim,
+        {
+          toValue:1,
+          duration:1000,
+          easing: Easing.back()
+        }).start(()=>{
+          Animated.timing(
+            this.state.fadeAnim,
+            {
+              toValue:0,
+              duration:1000,
+            }).start(()=>{
+              this.Infinite()
+            });
+        });
+    }
   render() {
+    let {fadeAnim} = this.state;
     return (
       <View style={styles.container}>
           <TouchableWithoutFeedback onPress={() => Communications.phonecall('9178625466', true)}><Text style={styles.phoneNumber}>Call 24/7 917-862-5466</Text></TouchableWithoutFeedback>
-          <Image style={styles.image} source={towtruck} />
+            <Image style={styles.image} source={towtruck} />
           <ScrollView maximumZoomScale={5} overScrollMode="auto">
             <View style={{alignItems:'center'}}>
             <View>
@@ -47,8 +73,16 @@ export default class App extends Component {
           </View>
             </View>
             <View style={styles.footer}>
-                <Text style={{textAlign:'center', paddingTop:10, color:'white'}}>TA Trucking</Text>
+              <Text style={{color:'white', textAlign:'center'}}>TA Trucking</Text>
             </View>
+            {/* <Animated.View
+              style={{
+                ...this.props.style,
+                opacity:fadeAnim
+              }}
+            >
+              <Image source={cash} style={{height:80, width:80}} />
+            </Animated.View> */}
         </ScrollView>
       </View>
     );
@@ -97,6 +131,6 @@ const styles = StyleSheet.create({
     flex:1,
     width:'100%',
     backgroundColor:'black',
-    bottom:0,
+    bottom:0
   }
 });

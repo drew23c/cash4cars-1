@@ -12,7 +12,7 @@
     "orientation": "portrait",
     "icon": "./assets/towtruckIcon.png",
     "splash": {
-      "image": "./assets/icon.png",
+      "image": "./assets/towtruckIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
