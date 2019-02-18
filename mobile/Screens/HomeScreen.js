@@ -5,7 +5,6 @@ import towtruck from '../pics/towtruck.jpg';
 import towtruckIcon from '../pics/towtruckIcon.jpg';
 import cash from '../pics/cash.png';
 import phoneIcon from '../pics/phone.png';
-import WreckImage from '../poses/Image';
 
 export default class App extends Component {
   static navigationOptions = {
@@ -13,30 +12,47 @@ export default class App extends Component {
   }
     state={
       fadeAnim: new Animated.Value(10),
+      springAnim: new Animated.Value(.3)
     }
     componentDidMount(){
-      this.Infinite()
+      this.Infinite();
+      this.Spring();
     }
     Infinite(){
         Animated.timing(
         this.state.fadeAnim,
         {
           toValue:1,
-          duration:1000,
+          duration:100,
           easing: Easing.back()
         }).start(()=>{
           Animated.timing(
             this.state.fadeAnim,
             {
               toValue:0,
-              duration:1000,
+              duration:900,
             }).start(()=>{
               this.Infinite()
             });
         });
     }
+    Spring(){
+      Animated.loop(
+      Animated.spring(
+        this.state.springAnim,
+        {
+          toValue:1,
+          friction:1,
+          duration:100
+        }
+      ),
+      {
+        iterations:Infinity
+      }
+      ).start()
+    }
   render() {
-    let {fadeAnim} = this.state;
+    let {fadeAnim, springAnim} = this.state;
     return (
       <View style={styles.container}>
           <TouchableWithoutFeedback onPress={() => Communications.phonecall('9178625466', true)}><Text style={styles.phoneNumber}>Call 24/7 917-862-5466</Text></TouchableWithoutFeedback>
@@ -57,11 +73,24 @@ export default class App extends Component {
           <View style={{alignItems:'center', position:'relative'}}>
             <Text style={{textAlign:'center', fontSize:20, paddingBottom:10}}>We buy junk cars, vans, trucks, SUVs, forklifts in all 5 boroughs</Text>
             <Text style={{fontSize:20, textAlign:'center'}}>Want to junk your car, van truck SUV, forklift?</Text>
-                <TouchableWithoutFeedback onPress={() => Communications.phonecall('9178625466', true)}><Image source={phoneIcon} style={{height:80, width:80, borderRadius:25}} /></TouchableWithoutFeedback>
+            <Animated.View
+              style={{
+                transform:[{scale: springAnim}]
+              }}
+            >
+              <TouchableWithoutFeedback onPress={() => Communications.phonecall('9178625466', true)}><Image source={phoneIcon} style={{height:80, width:80, borderRadius:25}} /></TouchableWithoutFeedback>
+            </Animated.View>
                 <Text style={{fontSize:20}}>Get a fast offer 24/7</Text>
                 <Image source={towtruckIcon} style={{height:80, width:80, borderRadius:25}} />
                 <Text style={{fontSize:20, textAlign:'center'}}>Get a <Text style={{fontWeight:'bold', fontSize:20}}>FREE</Text> tow. Absolutely <Text style={{fontWeight:'bold'}}>FREE</Text> pickup included.</Text>
-                <Image source={cash} style={{height:80, width:80, borderRadius:25}} />
+              <Animated.View
+                  style={{
+                    ...this.props.style,
+                    opacity:fadeAnim
+                  }}
+                >
+                  <Image source={cash} style={{height:80, width:80, borderRadius:25}} />
+            </Animated.View>
               <Text style={{fontSize:20, textAlign:'center'}}>Get paid immediately, you get paid on the spot!</Text>
             <Text style={{fontSize:20, textAlign:'center'}}>Have any questions?</Text>
             <Text style={{fontSize:20, color:'red'}}>Call 24/7 917-862-5466</Text>
@@ -75,14 +104,6 @@ export default class App extends Component {
             <View style={styles.footer}>
               <Text style={{color:'white', textAlign:'center'}}>TA Trucking</Text>
             </View>
-            {/* <Animated.View
-              style={{
-                ...this.props.style,
-                opacity:fadeAnim
-              }}
-            >
-              <Image source={cash} style={{height:80, width:80}} />
-            </Animated.View> */}
         </ScrollView>
       </View>
     );
