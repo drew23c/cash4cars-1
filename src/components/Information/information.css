@@ -24,18 +24,41 @@
     margin-top:2%;
     margin-bottom:2%;
 }
+.junkCar{
+    float:left;
+    height:40%;
+    width:20vw;
+    border-radius:10%;
+    margin: 3% 0 0 5%;
+}
+.crashedCar{
+    float:right;
+    height:40%;
+    width:20vw;
+    border-radius:10%;
+    margin: 3% 5% 0 0;
+}
 @media screen and (max-width:680px){
     .We-buy{
         width:80%;
+    }
+    .information ul li{
+        list-style-type: none;
     }
 } 
 @media screen and (max-width:768px){
     .We-buy{
         width:80%;
     }
+    .information ul li{
+        list-style-type: none;
+    }
 } 
 @media screen and (max-width:1024px){
     .We-buy{
         width:80%;
+    }
+    .information ul li{
+        list-style-type: none;
     }
 }

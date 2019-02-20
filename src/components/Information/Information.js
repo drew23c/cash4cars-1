@@ -3,6 +3,8 @@ import './information.css';
 import towtruckIcon from '../pics/towtruckIcon.jpg';
 import cash from '../pics/cash.png';
 import phoneIcon from '../pics/phone.png';
+import junkCar from '../pics/junkCar.jpeg';
+import crashedCar from '../pics/Crashed-car.jpg';
 
 export default class Information extends Component{
     render(){
@@ -10,6 +12,8 @@ export default class Information extends Component{
             <div className="information">
                 <h2>We buy junk cars, vans, trucks, SUVs, forklifts in all 5 boroughs</h2>
                 <h3>Want to junk your car, van truck SUV, forklift?</h3>
+                <img className="junkCar" src={junkCar} />
+                <img className="crashedCar" src={crashedCar} />
                 <div>
                 <ul>
                     <li><a href="tel:9178625466"><img className="cash-image" src={phoneIcon} style={{height:'15%', width:'15%'}} /></a></li>
