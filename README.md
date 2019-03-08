@@ -5,13 +5,13 @@
 TA Trucking 4 Junk:
 ![Home Page](/screenshots/website.png)
 
-The Mobile View:
+The Mobile View:<br>
 <a href="https://play.google.com/store/apps/details?id=com.tatrucking4junk.tatrucking4junk">Google Play Store</a>
 ![Splash Screen](/screenshots/splashScreen.png)
 
 ![Mobile](/screenshots/mobile.png)
 
-# Technology used
+# Technologies used
 <ul>
     <li>React</li>
     <li>React Native</li>
