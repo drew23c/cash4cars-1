@@ -5,6 +5,7 @@ import cash from '../pics/cash.png';
 import phoneIcon from '../pics/phone.png';
 import junkCar from '../pics/junkCar.jpeg';
 import crashedCar from '../pics/Crashed-car.jpg';
+import Badge from '../Badge/Badge';
 
 export default class Information extends Component{
     render(){
@@ -31,6 +32,7 @@ export default class Information extends Component{
                     get paid on the spot. We don't just buy junk vehicles! We buy 
                     ANY condition vehicle with or without a title or keys.`}</p>
                 <p>Lost keys, no problem!</p>
+                    <Badge/>
                 </div>
             </div>
         )
