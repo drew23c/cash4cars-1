@@ -11,7 +11,7 @@ export default class Information extends Component{
     render(){
         return(
             <div className="information">
-                <h2>We buy junk cars, vans, trucks, SUVs, forklifts in all 5 boroughs</h2>
+                <h2>We buy junk cars, vans, trucks, SUVs, forklifts in all 5 boroughs of NYC as well as NJ</h2>
                 <h3>Want to junk your car, van truck SUV, forklift?</h3>
                 <img className="junkCar" src={junkCar} />
                 <img className="crashedCar" src={crashedCar} />
@@ -27,7 +27,7 @@ export default class Information extends Component{
                 <h3>Have any questions? <br/><strong className="call">Call 24/7 917-862-5466</strong></h3>
                 </div>
                 <div className="We-buy">
-                <p>{`We buy junk cars for cash in the entire New York area. 
+                <p>{`We buy junk cars for cash in the entire New York and New Jersey area. 
                     Sell your used or unwanted cars, trucks, SUVs, or vans and 
                     get paid on the spot. We don't just buy junk vehicles! We buy 
                     ANY condition vehicle with or without a title or keys.`}</p>
