@@ -9,7 +9,7 @@ export default class Footer extends Component{
                 <ul className="footer-list">
                 <li>TA Trucking</li>
                 <li>Click to call <a href="tel:9178625466"><img src={phone} style={{filter:'invert(100%)'}} /></a></li>
-                {/* <li><a href="https://www.facebook.com/bluecanvascreative/" target="_blank">Designed by Blue Canvas Creative</a></li> */}
+                {/* <li><a href="https://www.bluecanvascreative.com/444647280" target="_blank">Designed by Blue Canvas Creative</a></li> */}
                 </ul>
             </div>
         )
